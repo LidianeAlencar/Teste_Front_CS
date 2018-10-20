@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./assets/css/estilo.css">
+    <title>Front</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+</head>
+<body>
+
+    <!--HEADER-->
+    <header>
+        <div id="lines"></div>
+        <div class="container">
+
+            <nav id="mobile">
+                <a href="#produtos">Produtos</a>
+                <a href="#quemSomos">Quem Somos</a>
+                <a href="#contato">Contato</a>
+            </nav>
+
+            <ul class="info-login">
+                <li>Olá, Nome</li>
+                <li><a href="#logoff">Logoff</a></li>
+            </ul>
+
+        </div>
+    </header>
+
+    <div class="banner text-center">
+        <div class="container">
+            <img src="./assets/img/banner.jpg" alt="Slider 1">
+        </div>
+    </div>
+
+
+    <section class="productNav">
+        <div class="container">
+            <nav class="filterMenu" id="filterMenu"">
+                <a id="eletro"><span class="icon icon-eletro"></span>Eletro</a>
+                <a id="presente"><span class="icon icon-presente"></span>Presente</a>
+                <a id="moda"><span class="icon icon-moda"></span>Moda</a>
+                <a id="saude"><span class="icon icon-saude"></span>Saúde</a>
+                <a id="beleza"><span class="icon icon-beleza"></span>Beleza</a>
+                <a id="gastronomia"><span class="icon icon-gastronomia"></span>Gastronomia</a>
+                <a id="decoracao"><span class="icon icon-decoracao"></span>Decoração</a>
+                <a id="cultura"><span class="icon icon-cultura"></span>Cultura</a>
+                <a id="outros"><span class="icon icon-outros"></span>Outros</a>
+            </nav>       
+
+            <select name="filterProd" id="filterProd">
+                <option value="maisProcurado" >Mais procurados</option>
+                <option value="menorPreco" onchange="menorPreco()">Menor Preço</option>
+                <option value="maiorDesconto">Maior Desconto</option>
+                <option value="orderAZ">A-Z</option>
+                <option value="orderZA">Z-A</option>
+            </select>
+        </div>
+    </section>
+
+
+
+    <section id="product">
+        <div class="container">
+
+            <div class="product-item eletro cars maisProcurado">
+               <img src="./assets/img/product/prod-1.jpg" alt="Icon 1">
+               <div class="info">
+                   <span class="titulo">Lorem Ipsum</span>
+                   <span class="desconto">10% de desconto</span>
+                   <a href="" class="btn">Saiba Mais</a>
+               </div> 
+           </div>
+
+           <div class="product-item saude maiorDesconto">
+               <img src="./assets/img/product/prod-2.jpg" alt="Icon 1">
+               <div class="info">
+                   <span class="titulo">Auctor Arcu</span>
+                   <span class="desconto">12% de desconto</span>
+                   <a href="" class="btn">Saiba Mais</a>
+               </div>
+           </div>
+
+           <div class="product-item beleza menorPreco">
+               <img src="./assets/img/product/prod-3.jpg" alt="Icon 1">
+               <div class="info">
+                   <span class="titulo">Mauris Porttitor</span>
+                   <span class="desconto">20% de desconto</span>
+                   <a href="" class="btn">Saiba Mais</a>
+               </div>
+           </div>
+
+           <div class="product-item presente menorPreco">
+               <img src="./assets/img/product/prod-4.jpg" alt="Icon 1">
+               <div class="info">
+                   <span class="titulo">Orci Varius</span>
+                   <span class="desconto">15% de desconto</span>
+                   <a href="" class="btn">Saiba Mais</a>
+               </div>
+           </div>
+
+           <div class="product-item decoracao">
+               <img src="./assets/img/product/prod-5.jpg" alt="Icon 1">
+               <div class="info">
+                   <span class="titulo">Morbi Pharetra</span>
+                   <span class="desconto">18% de desconto</span>
+                   <a href="" class="btn">Saiba Mais</a>
+               </div>
+           </div>
+
+           <div class="product-item gastronomia">
+               <img src="./assets/img/product/prod-6.jpg" alt="Icon 1">
+               <div class="info">
+                   <span class="titulo">Vestibulum Lectus</span>
+                   <span class="desconto">32% de desconto</span>
+                   <a href="" class="btn">Saiba Mais</a>
+               </div>
+           </div>
+
+           <div class="product-item eletro">
+               <img src="./assets/img/product/prod-7.jpg" alt="Icon 1">
+               <div class="info">
+                   <span class="titulo">Sagittis Feugiat</span>
+                   <span class="desconto">20% de desconto</span>
+                   <a href="" class="btn">Saiba Mais</a>
+               </div>
+           </div>
+
+           <div class="product-item cultura">
+               <img src="./assets/img/product/prod-8.jpg" alt="Icon 1">
+               <div class="info">
+                   <span class="titulo">Cras Pulvina</span>
+                   <span class="desconto">12% de desconto</span>
+                   <a href="" class="btn">Saiba Mais</a>
+               </div>
+           </div>
+
+           <div class="product-item moda">
+               <img src="./assets/img/product/prod-9.jpg" alt="Icon 1">
+               <div class="info">
+                   <span class="titulo">Aenean Massa</span>
+                   <span class="desconto">20% de desconto</span>
+                   <a href="" class="btn">Saiba Mais</a>
+               </div>
+           </div>
+
+           <div class="product-item cultura">
+               <img src="./assets/img/product/prod-10.jpg" alt="Icon 1">
+               <div class="info">
+                   <span class="titulo">EX Magna</span>
+                   <span class="desconto">5% de desconto</span>
+                   <a href="" class="btn">Saiba Mais</a>
+               </div>
+           </div> 
+
+       </div>
+   </section> 
+
+
+   <!-- QUEM SOMOS -->
+
+   <section class="quemSomos">
+    <div class="container">
+        <div class="col-info">
+            <h2>Quem Somos</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae finibus tortor. Fusce eu tempus nulla. Duis blandit auctor ex, a 
+                lacinia erat porttitor non. Sed tempus tincidunt diam non pharetra. Sed sodales porta felis nec hendrerit. Morbi vulputate ligula a dolor scelerisque semper.
+            </p>
+            <p>Praesent pulvinar velit nec ligula auctor pharetra. Aenean non egestas purus, at consequat nulla. Aenean molestie nisl ex.</p>
+
+
+            <ul class="listaQuemSomos">
+                <li>
+                    <img src="./assets/img/icon/1.svg" alt="Icon 1">
+                    <span><strong>Sed vel fringilla libero,</strong> blandit facilisis enim lotus;</span>
+                </li>
+                <li>
+                    <img src="./assets/img/icon/2.svg" alt="Icon 2">
+                    <span>aecenas ut vehicula leo. Proin non lacinia nunc;</span>
+                </li>
+                <li>
+                    <img src="./assets/img/icon/3.svg" alt="Icon 3">
+                    <span><strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</strong> Orci varius <br> natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus;</span>
+                </li>
+                <li>
+                    <img src="./assets/img/icon/4.svg" alt="Icon 4">
+                    <span>Nullam porta, ex commodo tincidunt imperdiet, massa urna malesuada eros, <br> quis aliquet <strong>lacus quam id dolor.</strong></span>
+                </li>
+            </ul>
+
+        </div>
+
+        <div class="col-img">
+            <img src="./assets/img/quem-somos.png" alt="Quem Somos">
+        </div>
+    </div>
+</section>
+
+
+
+<!-- MODAL DESCONTO -->
+<div id="myModal" class="modal">
+  <div class="modal-content">
+
+    <div class="info-desconto">
+        <div class="box align-center">   
+            <img src="./assets/img/icon/img-modal.png" alt="Modal">
+        </div>
+        <div class="box">
+            <img class="img-desconto" src="./assets/img/icon/cupom.png" alt="Ticket">
+            <p>Cupom - <span>DSC2015</span></p>
+            <span class="desconto">(insira o cupom de <br>desconto  no carrinho)</span>
+        </div>
+        <div class="box">
+            <img class="img-desconto" src="./assets/img/icon/porcentagem.png" alt="Desconto">
+            <p>10% de desconto <br>em todo site</p>
+        </div>
+        <div class="box">
+            <a href="#" target="_blank">Acesse agora e aproveite!</a>
+        </div>
+    </div>
+
+    <div class="info-contato">
+        <span class="close">&times;</span>
+
+        <h2>Lorem Ipsum</h2>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus urna libero, maximus eu sodales ut, porta non felis. Proin sit amet semper orci, at porttitor nunc. Pellentesque id neque pulvinar, faucibus nunc quis, tincidunt lacus. Quisque ac libero at ex hendrerit sollicitudin ac eu ex. Suspendisse ultricies condimentum lacus. Phasellus ultricies magna ac ex ornare.
+        Etiam lacinia lacinia condimentum. </p> 
+
+        <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In sed mauris et dui posuere faucibus sed viverra massa. </p>
+
+        <p>
+            <span class="destaque">Telefone:</span> (11) 99999-9999 <br>
+            <span class="destaque">E-mail:</span> email@email.com
+        </p>
+
+        <p class="text">
+            Nullam fermentum auctor arcu, a convallis massa eleifend iaculis. Fusce orci erat, elementum vitae urna vitae, vehicula tincidunt velit. Mauris id hendrerit justo. 
+            Etiam a consectetur lorem. Vestibulum vulputate.
+        </p>
+    </div>
+
+</div>
+</div>
+<!-- FIM MODAL DESCONTO -->
+
+
+<!-- FOOTER -->
+
+<footer>
+    <div class="container">
+        <p>
+            <img src="./assets/img/icon/atendimento.svg" alt="Icon 1">
+            Caso tenha dúvidas, <a href="#contato" id="myBtn">entre em contato conosco</a>
+        </p>
+    </div>
+</footer>
+
+<script src="./assets/js/script.js"></script>
+</body>
+</html>

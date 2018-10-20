@@ -1,0 +1,576 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size:14px;
+    color: #4b595e
+}
+
+.container{
+    max-width: 980px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+
+a, a:hover, a:visited, a:focus{
+    text-decoration: none;
+    transition: 0.3s ease all;
+}
+
+ul{list-style: none;}
+
+.align-center{text-align: center}
+
+
+/*---------------------------------------------------*/
+/*HEADER*/
+
+.lines{display: none;}
+
+header{
+    background:#f7f9f9;
+    box-shadow:0px 3px 10px rgba(000,000,000,0.5);
+    width:100%;
+    position: fixed;
+    z-index: 999;
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+/* nav */
+header nav a{
+    padding: 20px;
+    display: block;
+    font-size: 18px;
+    display: inline-block;
+    color: #003abc;
+}
+
+header nav a:hover{
+    background: #003abc;
+    color:white; 
+}
+
+
+/* info login */
+header .info-login {
+    color:#ef7a1a;
+    margin-top: 10px;
+}
+
+header .info-login a{
+    color:#666666;
+    text-decoration: underline;
+}
+header .info-login a:hover{
+    text-decoration: none;
+}
+
+
+
+
+
+/*---------------------------------------------------*/
+/*FOOTER*/
+footer{
+    background:#004d8f;
+    width:100%;
+    padding: 30px 0;
+}
+
+footer p, footer a{
+    color: #FFFFFF;
+}
+footer a{
+    text-decoration: underline;
+
+}
+footer a:hover{
+    text-decoration: none;
+    opacity: 0.8;
+}
+footer img{
+    max-width: 30px;
+    margin-right: 10px;
+}
+
+
+
+/*---------------------------------------------------*/
+/* BANNER */
+
+.banner{
+    padding: 75px 0 10px 0;
+    clear: both;
+}
+
+
+
+/*---------------------------------------------------*/
+/* MENU PRODUTOS */
+.productNav{
+    background:#f1f0f3;
+    padding: 20px 0;
+}
+
+
+.productNav .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+
+.icon {
+    display: inline-block;
+    height: 40px;
+    width: 55px;
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.icon-eletro{background-image: url(../img/icon/eletro.svg)}
+.icon-presente{background-image: url(../img/icon/presente.svg)}
+.icon-moda{background-image: url(../img/icon/moda.svg)}
+.icon-esporte{background-image: url(../img/icon/esporte.svg)}
+.icon-saude{background-image: url(../img/icon/saude.svg)}
+.icon-beleza{background-image: url(../img/icon/beleza.svg)}
+.icon-gastronomia{background-image: url(../img/icon/gastronomia.svg)}
+.icon-decoracao{background-image: url(../img/icon/decoracao.svg)}
+.icon-cultura{background-image: url(../img/icon/cultura.svg)}
+.icon-outros{background-image: url(../img/icon/outros.svg); width: 30px;}
+
+
+
+.productNav nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+
+.productNav nav a{
+    display: block;
+    border-right:1px solid #cccccc; 
+    padding:0 12px;
+    text-align: center;
+    color:#004d90;
+    font-size: 13px;
+    cursor:pointer;
+}
+
+.productNav nav a:first-child{
+    padding-left: 0;
+}
+.productNav nav a:last-child{
+    border: none;
+}
+
+.productNav nav a:hover{
+    color: #ef7a1a;
+}
+
+
+/* select filtro */
+#filterProd{
+    border-radius: 5px;
+    height: 40px;
+    font-size: 17px;
+    padding: 5px 30px 5px 5px;
+    color: #004d90;
+    border: 1px solid #dcdcdb;
+    margin:15px 0 0 15px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+/*---------------------------------------------------*/
+/* PRODUTOS */
+
+
+#product {
+    margin-top: 35px;
+    margin-bottom: 35px;
+    /* border-bottom: 1px solid #DFDFDF; */
+    padding-bottom:50px; 
+}
+
+#product .container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product-item {
+    position: relative;
+    margin-bottom: 10px;
+    transition: 0.5s ease all;
+}
+
+
+
+.product-item .info{
+    position: absolute;
+    background: rgba(255,255,255,0.9);
+    width: 100%;
+    height: auto;
+    padding: 5px 0;
+    bottom: 3px;
+    text-align: center;
+}
+
+.product-item .titulo{font-weight: 700; font-size: 16px; color: #666666; display: block; line-height:25px }
+.product-item .desconto{font-weight: 300; font-size: 16px; color: #666666; display: block;}
+
+.product-item .btn{
+    background: #ef7a1a;
+    color: #FFFFFF;
+    font-style: italic;
+    padding:8px;
+    margin: 5px 10px;
+    display: none;
+}
+
+
+.product-item:hover .btn{
+    display: block;
+}
+
+.product-item:hover .info{
+    height: 100%;
+}
+
+.product-item:hover .info .titulo, .product-item:hover .info .btn{
+    margin-top: 20px;
+}
+
+
+
+
+
+/*---------------------------------------------------*/
+/*QUEM SOMOS*/
+
+
+.quemSomos{
+    width: 100%;
+}
+
+.quemSomos h2{
+    color:#004d90;
+    font-weight: 400;
+    font-size:30px;
+    margin-bottom: 15px;
+}
+
+.quemSomos p{
+   margin: 5px 0;
+}
+
+
+
+.quemSomos .container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.quemSomos div[class*="col"]{
+    width: 100%;
+    -webkit-flex: 1;
+    -ms-flex: 1;   
+    flex: 1;
+}
+
+.quemSomos .col-info{
+
+}
+
+.quemSomos .col-img{
+    max-width: 290px;
+    text-align: right;
+    margin-bottom: -5px;
+}
+
+
+.listaQuemSomos img{
+    max-width: 25px;
+    height: 30px;
+    margin:0 10px 10px 0 ;
+    vertical-align: middle;
+}
+
+ul.listaQuemSomos {
+    margin-top: 25px;
+}
+
+.listaQuemSomos li{
+    padding: 3px;
+    display: flex;
+    flex-direction: row;
+}
+
+.listaQuemSomos li span{
+    height:30px;
+    display: block;
+}
+
+
+
+
+
+/*---------------------------------------------------*/
+/*MODAL*/
+
+
+.modal {
+    display: none;
+    position: fixed; 
+    z-index: 9999; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.7); 
+}
+
+/* conteudo*/
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    border: 1px solid #888;
+    width: 980px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+
+/*conteudo desconto*/
+.modal-content .info-desconto{
+    max-width: 210px;
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.info-desconto .box{
+    display: block;
+    width: 100%;
+}
+
+.info-desconto .box img.img-desconto{
+    float: left;
+    margin:10px 5px 20px 0;
+}
+
+.info-desconto .box p{
+    color: #004d90;
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 0
+}
+
+.info-desconto .box p span{
+    color:#ef7a1a;
+}
+
+.info-desconto .box span.desconto{
+    font-size: 13px;
+    color: #676767;
+}
+
+.info-desconto a{
+    color:#ef7a1a;
+    border: 1px solid #ef7a1a;
+    padding:10px 0;
+    border-radius: 5px;
+    font-size: 16px;
+    display: block;
+    text-align: center;
+}
+
+.info-desconto a:hover{
+    background: #ef7a1a;
+    color: white;
+}
+
+
+/*conteudo contato*/
+.modal-content .info-contato{
+    max-width: 600px;
+    padding: 40px;
+}
+
+.modal-content .info-contato h2{
+    color:#ef7a1a;
+    font-size: 25px;
+    font-weight: 500
+}
+
+.modal-content p{margin: 10px 0; font-size: 15px; font-weight: 500; line-height: 25px;}
+
+
+span.destaque{color:#004d8f; font-weight:600; }
+
+
+/*close button*/
+
+.close {
+    color: #FFFFFF;
+    background: #666666;
+    float: right;
+    font-size: 19px;
+    font-weight: bold;
+    border-radius: 50px;
+    display: block;
+    width: 25px;
+    height: 25px;
+    text-align: center; 
+}
+
+.close:hover,
+.close:focus {
+    color: #FFFFFF;
+    background: #ef7a1a;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+/*MOBILE*/
+/*//LARGURA 320PX*/
+@media (max-width: 320px){
+
+    .container{max-width: 300px;}
+
+    /*FILTRO*/
+    .productNav{padding: 0; margin: 0 10px;}
+    .productNav .container{padding: 7px 0; max-width: 260px;}
+    nav#filterMenu{display: none;}
+    #filterProd{margin: 0 auto}
+
+
+    /*BANNER*/
+    .banner {padding: 0}
+    .banner .container{max-width: 320px;}
+    .banner img{width: 100%;}
+
+    /*PRODUTOS*/
+    #product{padding: 0; margin: 0}
+    #product .container{padding-top: 10px;}
+    .product-item {width: 48%;}
+    .product-item img{width: 100%;}
+    .product-item .titulo{font-size: 13px;}
+    .product-item .desconto {font-weight: 500; font-size: 13px;}
+
+
+    /*//QUEM SOMOS*/
+    .quemSomos .container{max-width: 270px; padding: 25px;}
+    .col-img{display: none;}
+    .listaQuemSomos li span{height: auto;}
+
+
+    /*FOOTER*/
+    footer .container{max-width: 280px;}
+    footer{ margin-top: 15px;}
+    footer img {max-width: 40px; float: left;}
+    footer a {display: block;}
+
+    /*HEADER*/
+    header{box-shadow: none; position: inherit; height: 48px;}
+    header .container{box-shadow: none; position: inherit; height: 48px;}
+    .info-login li{float: left; margin:0 5px;}
+    header .info-login {margin-top: 16px; position: absolute; right: 10px; }
+
+    header nav{
+        background: white;
+        box-shadow: 2px 2px 10px rgba(000,000,000,0.2);
+        position: absolute;
+        margin: 48px 0 0 0px;
+        padding: 13px 17px;
+        border-radius: 0 0 3px 3px;
+        display: none;
+    }
+
+    header nav a{
+        display: block;
+        padding: 5px 15px 5px 0;
+        border-bottom: 1px solid #feead8;
+        color: #ef7a1e;
+        font-size: 16px;
+    }
+
+    header nav a:last-child{
+        border-bottom:none;
+    }
+
+    header nav a::before{
+        content: " | ";
+        color: #ef7a1e;
+        font-weight: 800
+    }
+
+
+    #lines {
+        display: block;
+        border-bottom: 15px double #ef7a19;
+        border-top: 5px solid #ef7a19;
+        content: "";
+        height: 5px;
+        width: 20px;
+        padding-right: 15px;
+        float: right;
+        margin-top: 12px;
+        margin-left: 12px;
+        margin-bottom: 11px;
+        position: absolute;
+    }
+
+
+
+    #lines:focus, #lines:hover  nav.mobile{display: block}
+    .activeMenu{display: block}
+
+
+    /*MODAL*/
+    .modal-content{display: block; max-width: 300px;margin-bottom: 170px; }    
+    .close{position: absolute;top: 120px;right: 25px;}
+
+}
